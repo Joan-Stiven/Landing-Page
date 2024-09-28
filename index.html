@@ -38,6 +38,18 @@
             height: auto;
             margin-bottom: 15%;
         }
+        .card-title {
+            color: goldenrod;
+            font-weight: bold;
+        }
+        .card {
+            border: 2px solid black; /* Borde negro */
+            border-radius: 8px; /* Opcional: esquinas redondeadas */
+        }
+        .text-user {
+            color: goldenrod; /* Color dorado o el que prefieras */
+            font-weight: bold; /* Para que sea más destacado */
+        }
     </style>
 </head>
 <body>
@@ -95,7 +107,7 @@
     <!-- Beneficios Section -->
     <section id="beneficios" class="bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-5" style="color: red;"<strong>Beneficios Para Todos</strong></h2>
+            <h2 class="text-center mb-5" style="color: red;"><strong>Beneficios Para Todos</strong></h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
@@ -140,17 +152,6 @@
         </div>
     </section>
 
-    <style>
-        .card-title {
-    color: goldenrod;
-    font-weight: bold;
-}
-        .card {
-    border: 2px solid black; /* Borde negro */
-    border-radius: 8px; /* Opcional: esquinas redondeadas */
-}
-    </style>
-
     <!-- Testimonios Section -->
     <section id="testimonios" class="py-5">
         <div class="container">
@@ -159,7 +160,7 @@
                 <div class="col-md-4 mb-4 text-center">
                     <blockquote class="blockquote">
                         <p class="mb-0"><strong>"Barber Face me ha ayudado a encontrar el estilo perfecto. ¡Increíble aplicación!"</strong></p><br>
-                        <footer class="blockquote-footer text-user"><strong>Stiven Silva, Clientes</strong></footer>
+                        <footer class="blockquote-footer text-user"><strong>Stiven Silva, Cliente</strong></footer>
                         <footer class="blockquote-footer text-user"><strong>Joseph Elizalde, Cliente</strong></footer>
                         <footer class="blockquote-footer text-user"><strong>Duberney Lopez, Cliente</strong></footer>
                     </blockquote>
@@ -169,34 +170,46 @@
                     <blockquote class="blockquote">
                         <p class="mb-0"><strong>"Como barbero, esta app ha impulsado mi negocio y me ha ayudado a mejorar."</strong></p><br>
                         <footer class="blockquote-footer text-user"><strong>Juan Rojas, Barbero</strong></footer>
-                         <footer class="blockquote-footer text-user"><strong>Camilo Vega, Barbero</strong></footer>
+                        <footer class="blockquote-footer text-user"><strong>Camilo Vega, Barbero</strong></footer>
+                        <footer class="blockquote-footer text-user"><strong>Andres Coronel, Barbero</strong></footer>
                     </blockquote>
                 </div>
 
                 <div class="col-md-4 mb-4 text-center">
                     <blockquote class="blockquote">
-                        <p class="mb-0"><strong>"La gestión de mi barbería es mucho más fácil gracias a Barber Face."</strong></p><br>
-                        <footer class="blockquote-footer text-user"><strong>Jhonatan Cabrera, Dueño de barbería</strong></footer>
+                        <p class="mb-0"><strong>"Como dueño de barbershop, Barber Face ha sido clave para aumentar mis clientes."</strong></p><br>
+                        <footer class="blockquote-footer text-user"><strong>Ricardo Cruz, Dueño</strong></footer>
+                        <footer class="blockquote-footer text-user"><strong>Diego Mendoza, Dueño</strong></footer>
+                        <footer class="blockquote-footer text-user"><strong>Felipe Jaramillo, Dueño</strong></footer>
                     </blockquote>
                 </div>
             </div>
         </div>
     </section>
-    
-    <style>
-        .text-user {
-    color: goldenrod; /* Color dorado o el que prefieras */
-    font-weight: bold; /* Para que sea más destacado */
-}
-    </style>
 
     <!-- Contacto Section -->
-    <section id="contacto" class="bg-dark text-white py-5">
+    <section id="contacto" class="bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Contáctanos</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <h3>Información de contacto</h3>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt me-2"></i> Dirección: Calle Principal 123, Ciudad</li>
-                        <li><i class="fas fa-phone me-2"></i> Teléfono: (123) 456-7890
+            <h2 class="text-center mb-5" style="color: red;"><strong>Contactos-Dudas</strong></h2>
+            <p class="text-center"><strong>Si tienes alguna duda o pregunta, no dudes en ponerte en contacto con nosotros a través de nuestras redes sociales o enviando un correo a info@barberface.com.</strong></p>
+            <div class="text-center">
+                <a href="mailto:info@barberface.com" class="btn btn-primary custom-btn">Enviar Correo</a>
+                <p class="mt-4"><i class="fas fa-phone"></i> +57 123 456 789</p>
+                <p><i class="fas fa-map-marker-alt"></i> Calle 123, Ciudad, País</p>
+                <div class="social-icons mt-4">
+                    <a href="#" class="me-3">
+                        <img src="./img/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="#" class="me-3">
+                        <img src="./img/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
