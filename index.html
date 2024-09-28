@@ -103,9 +103,9 @@
                         <div class="card-body">
                             <h3 class="card-title">Para Clientes</h3>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>Elige el mejor corte para ti</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Encuentra barberos de calidad</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Comparte tu experiencia</li>
+                                <li><i class="fas fa-circle text-danger me-2"></i><strong>Agenda tu cita de manera inmediata</strong></li>
+                                <li><i class="fas fa-circle text-danger me-2"></i><strong>Encuentra barberos de calidad</strong></li>
+                                <li><i class="fas fa-circle text-danger me-2"></i><strong>Comparte tu experiencia</strong></li>
                             </ul>
                         </div>
                     </div>
@@ -116,9 +116,9 @@
                         <div class="card-body">
                             <h3 class="card-title">Para Barberos</h3>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>Muestra tu portafolio</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Recibe feedback valioso</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Mejora tu reputación</li>
+                                <li><i class="fas fa-circle text-danger me-2"></i><strong>Muestra tu portafolio</strong></li>
+                                <li><i class="fas fa-circle text-danger me-2"></i><strong>Recibe feedback valioso</strong></li>
+                                <li><i class="fas fa-circle text-danger me-2"></i><strong>Mejora tu reputación</strong></li>
                             </ul>
                         </div>
                     </div>
@@ -129,9 +129,9 @@
                         <div class="card-body">
                             <h3 class="card-title">Para Dueños</h3>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>Gestiona tu negocio eficientemente</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Analiza el rendimiento</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Mejora la satisfacción del cliente</li>
+                                <li><i class="fas fa-circle text-danger me-2"></i><strong>Gestiona tu negocio eficientemente</strong></li>
+                                <li><i class="fas fa-circle text-danger me-2"></i><strong>Analiza el rendimiento</strong></li>
+                                <li><i class="fas fa-circle text-danger me-2"></i><strong>Mejora la satisfacción del cliente</strong></li>
                             </ul>
                         </div>
                     </div>
@@ -140,38 +140,55 @@
         </div>
     </section>
 
+    <style>
+        .card-title {
+    color: goldenrod;
+    font-weight: bold;
+}
+        .card {
+    border: 2px solid black; /* Borde negro */
+    border-radius: 8px; /* Opcional: esquinas redondeadas */
+}
+    </style>
+
     <!-- Testimonios Section -->
     <section id="testimonios" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Lo que dicen nuestros usuarios</h2>
+            <h2 class="text-center mb-5" style="color: red;"><strong>Nuestros Usuarios</strong></h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">"Barber Face me ha ayudado a encontrar el estilo perfecto. ¡Increíble aplicación!"</p>
-                            <footer class="blockquote-footer">Carlos, Cliente</footer>
-                        </div>
-                    </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <blockquote class="blockquote">
+                        <p class="mb-0"><strong>"Barber Face me ha ayudado a encontrar el estilo perfecto. ¡Increíble aplicación!"</strong></p><br>
+                        <footer class="blockquote-footer text-user"><strong>Stiven Silva, Clientes</strong></footer>
+                        <footer class="blockquote-footer text-user"><strong>Joseph Elizalde, Cliente</strong></footer>
+                        <footer class="blockquote-footer text-user"><strong>Duberney Lopez, Cliente</strong></footer>
+                    </blockquote>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">"Como barbero, esta app ha impulsado mi negocio y me ha ayudado a mejorar."</p>
-                            <footer class="blockquote-footer">Juan, Barbero</footer>
-                        </div>
-                    </div>
+
+                <div class="col-md-4 mb-4 text-center">
+                    <blockquote class="blockquote">
+                        <p class="mb-0"><strong>"Como barbero, esta app ha impulsado mi negocio y me ha ayudado a mejorar."</strong></p><br>
+                        <footer class="blockquote-footer text-user"><strong>Juan Rojas, Barbero</strong></footer>
+                         <footer class="blockquote-footer text-user"><strong>Camilo Vega, Barbero</strong></footer>
+                    </blockquote>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">"La gestión de mi barbería es mucho más fácil gracias a Barber Face."</p>
-                            <footer class="blockquote-footer">Jhonatan, Dueño de barbería</footer>
-                        </div>
-                    </div>
+
+                <div class="col-md-4 mb-4 text-center">
+                    <blockquote class="blockquote">
+                        <p class="mb-0"><strong>"La gestión de mi barbería es mucho más fácil gracias a Barber Face."</strong></p><br>
+                        <footer class="blockquote-footer text-user"><strong>Jhonatan Cabrera, Dueño de barbería</strong></footer>
+                    </blockquote>
                 </div>
             </div>
         </div>
     </section>
+    
+    <style>
+        .text-user {
+    color: goldenrod; /* Color dorado o el que prefieras */
+    font-weight: bold; /* Para que sea más destacado */
+}
+    </style>
 
     <!-- Contacto Section -->
     <section id="contacto" class="bg-dark text-white py-5">
